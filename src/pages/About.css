@@ -1,0 +1,83 @@
+.about {
+  padding: 2rem;
+  background: #0b0c10;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #c5c6c7;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #66fcf1;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 0 0 5px #66fcf1aa;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  color: #c5c6c7;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: #1f2833;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(102, 252, 241, 0.25);
+  width: 300px;
+  text-align: left;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  color: #c5c6c7;
+  border: 1px solid #66fcf1;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(102, 252, 241, 0.7);
+}
+
+.about-icon {
+  font-size: 2rem;
+  color: #66fcf1;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #66fcf1;
+}
+
+.about-card p,
+.about-card li {
+  font-size: 1rem;
+  color: #c5c6c7;
+  margin-bottom: 0.5rem;
+}
+
+.about-card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
