@@ -1,0 +1,104 @@
+.about.compact-layout {
+  max-width: 700px;
+  margin: 1rem auto 3rem auto;
+  padding: 1rem 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0b0c10;
+  color: #c5c6c7;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(102, 252, 241, 0.2);
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #66fcf1;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 8px #66fcf1aa;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #a3f0f0;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #45c2c9;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-bottom: 2px solid #66fcf1;
+  padding-bottom: 0.3rem;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: #66fcf1;
+}
+
+.about-section p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #c5c6c7;
+}
+
+.job {
+  margin-bottom: 1.5rem;
+}
+
+.job h3 {
+  font-size: 1.2rem;
+  color: #b0f5f5;
+  margin-bottom: 0.25rem;
+}
+
+.job span {
+  font-size: 0.9rem;
+  color: #7ebbbb;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.job ul {
+  padding-left: 1.3rem;
+  list-style: disc;
+  color: #d0f0f0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.fun-facts ul {
+  padding-left: 1.3rem;
+  list-style: disc;
+  color: #a9f3f3;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .about.compact-layout {
+    max-width: 90vw;
+    padding: 1rem;
+  }
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  .job h3 {
+    font-size: 1.1rem;
+  }
+}

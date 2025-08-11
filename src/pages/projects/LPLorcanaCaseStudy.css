@@ -1,0 +1,166 @@
+/* Import the base project details styles */
+@import "./ProjectDetails.css";
+
+/* Override some base styles for the case study */
+
+.case-study {
+  background: #12171f;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  box-shadow: 0 12px 35px rgba(102, 252, 241, 0.3);
+  color: #d0f0f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.case-study h1,
+.case-study h2 {
+  color: #66fcf1;
+  text-shadow: 0 0 8px #66fcf1aa;
+}
+
+.case-study h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.case-study h2 {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #45a29e;
+  padding-bottom: 0.5rem;
+}
+
+.case-study p,
+.case-study ul {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #a0dede;
+}
+
+.case-study ul {
+  padding-left: 1.75rem;
+  list-style-type: disc;
+}
+
+.case-study ul li {
+  margin-bottom: 0.5rem;
+}
+
+.case-study .hero-image {
+  border-radius: 12px;
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 12px #66fcf1aa);
+}
+
+.case-study .hero {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.case-study .hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+}
+
+.case-study .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.case-study .image-gallery div {
+  background: #1f2833;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(102, 252, 241, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+  position: relative;
+}
+
+.case-study .image-gallery div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(102, 252, 241, 0.5);
+}
+
+.case-study .image-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.case-study .back-link {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.case-study .back-link a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #66fcf1;
+  border: 3px solid #66fcf1;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.case-study .back-link a:hover {
+  background-color: #66fcf1;
+  color: #0b0c10;
+  box-shadow: 0 0 12px #66fcf1aa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .case-study {
+    padding: 1.5rem 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .case-study h1 {
+    font-size: 2.2rem;
+  }
+
+  .case-study h2 {
+    font-size: 1.5rem;
+  }
+
+  .case-study .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .case-study .image-gallery img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-study .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .case-study .image-gallery img {
+    height: 120px;
+  }
+}
