@@ -15,13 +15,20 @@
   flex-direction: column;
 }
 
+.home-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
 .hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem 0;
+  gap: 3rem;
+  padding: 3rem 0;
 }
 
 .hero-text {
@@ -97,7 +104,7 @@
 }
 
 .hero-image img {
-  max-width: 300px;
+  max-width: 450px;
   width: 100%;
   border-radius: 50%;
   border: 4px solid #66fcf1;
@@ -173,7 +180,7 @@
   }
 
   .hero-image img {
-    max-width: 240px;
+    max-width: 280px;
   }
 }
 

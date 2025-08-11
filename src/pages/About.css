@@ -1,98 +1,104 @@
-.about {
-  padding: 2rem;
-  background: #0b0c10;
+.about.compact-layout {
+  max-width: 700px;
+  margin: 1rem auto 3rem auto;
+  padding: 1rem 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0b0c10;
   color: #c5c6c7;
-  text-align: center;
-  min-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(102, 252, 241, 0.2);
 }
 
 .about-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 900;
   color: #66fcf1;
   margin-bottom: 1rem;
-  font-weight: 700;
-  text-shadow: 0 0 5px #66fcf1aa;
+  text-align: center;
+  text-shadow: 0 0 8px #66fcf1aa;
 }
 
 .about-intro {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  line-height: 1.6;
-  color: #c5c6c7;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #a3f0f0;
 }
 
-.about-cards {
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #45c2c9;
+  margin-bottom: 1rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  align-items: center;
+  gap: 0.7rem;
+  border-bottom: 2px solid #66fcf1;
+  padding-bottom: 0.3rem;
 }
 
-.about-card {
-  background: #1f2833;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(102, 252, 241, 0.25);
-  width: 300px;
-  text-align: left;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  color: #c5c6c7;
-  border: 1px solid #66fcf1;
-}
-
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(102, 252, 241, 0.7);
-}
-
-.about-icon {
-  font-size: 2rem;
-  color: #66fcf1;
-  margin-bottom: 1rem;
-}
-
-.about-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+.section-icon {
+  font-size: 1.5rem;
   color: #66fcf1;
 }
 
-.about-card p,
-.about-card li {
-  font-size: 1rem;
+.about-section p {
+  line-height: 1.6;
+  font-size: 1.05rem;
   color: #c5c6c7;
-  margin-bottom: 0.5rem;
 }
 
-.about-card ul {
+.job {
+  margin-bottom: 1.5rem;
+}
+
+.job h3 {
+  font-size: 1.2rem;
+  color: #b0f5f5;
+  margin-bottom: 0.25rem;
+}
+
+.job span {
+  font-size: 0.9rem;
+  color: #7ebbbb;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.job ul {
+  padding-left: 1.3rem;
   list-style: disc;
-  padding-left: 1.2rem;
+  color: #d0f0f0;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
-@media (max-width: 768px) {
-  .about-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
+.fun-facts ul {
+  padding-left: 1.3rem;
+  list-style: disc;
+  color: #a9f3f3;
+  line-height: 1.5;
+  font-size: 1rem;
+}
 
-  .about-card {
-    width: 90%;
-    max-width: 400px;
-    padding: 1.5rem;
+/* Responsive */
+@media (max-width: 480px) {
+  .about.compact-layout {
+    max-width: 90vw;
+    padding: 1rem;
   }
-
-  .about-card h3 {
-    font-size: 1.25rem;
+  .about-title {
+    font-size: 2.5rem;
   }
-
-  .about-card p,
-  .about-card li {
-    font-size: 0.95rem;
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  .job h3 {
+    font-size: 1.1rem;
   }
 }
